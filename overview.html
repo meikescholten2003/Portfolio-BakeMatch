@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BakeMatch overview - Features and functionality explained">
+    <title>BakeMatch - Overview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">BakeMatch</a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container">
+                <h1>Project Overview</h1>
+                <p>A detailed look at BakeMatch features and how users interact with the platform to discover recipes based on their available ingredients.</p>
+            </div>
+        </section>
+
+        <!-- Main Features -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Main Features</h2>
+                <p class="section-intro">
+                    BakeMatch provides essential recipe discovery features designed with user needs in mind. Each feature was developed based on research, user testing, and a clear understanding of the target audience: students, young professionals, and beginner cooks who want to reduce food waste and cook with what they have.
+                </p>
+
+                <div class="feature-list">
+                    <!-- Feature 1 -->
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <h3>Ingredient Filter System</h3>
+                            <p>The core feature of BakeMatch allows users to select ingredients they have at home. The system instantly filters and displays recipes that can be made with those exact ingredients. Users can also see recipes with just one missing ingredient, encouraging flexibility and creativity.</p>
+                            <p>The ingredient selection is intuitive and visual, making it easy for users to quickly input what they have without typing long lists. This reverses the traditional recipe search and puts users' real kitchen situations first.</p>
+                        </div>
+                        <div>
+                            <img src="images/feature-task-creation.png" alt="Ingredient selection interface" class="feature-image">
+                            <span class="image-caption">Ingredient filter with selection options</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <h3>Recipe Database Integration</h3>
+                            <p>BakeMatch loads real recipe data dynamically through TheMealDB API, an external recipe database. Each recipe includes a photo, preparation time, difficulty level, complete ingredient list, and detailed step-by-step instructions.</p>
+                            <p>Users can browse all available recipes, search for specific dishes, or filter by categories and areas. The database integration ensures fresh, reliable recipe information without manual maintenance.</p>
+                        </div>
+                        <div>
+                            <img src="images/feature-dashboard.png" alt="Recipe overview showing filtered results" class="feature-image">
+                            <span class="image-caption">Recipe database with dynamic filtering</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <h3>Favorites Functionality</h3>
+                            <p>Users can save their favorite recipes for easy access later. The favorites system uses LocalStorage to keep recipes saved directly in the browser, allowing users to build their personal recipe collection without needing to create an account or log in.</p>
+                            <p>Saved recipes remain accessible across sessions and can be removed or added at any time. This feature encourages users to return to the platform and build a personalized cooking repertoire.</p>
+                        </div>
+                        <div>
+                            <img src="images/feature-collaboration.png" alt="Favorites panel with saved recipes" class="feature-image">
+                            <span class="image-caption">Saved favorites interface</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <h3>Tips Page</h3>
+                            <p>BakeMatch includes a dedicated Tips section that provides helpful cooking and baking guidance for users. This educational content helps beginners learn essential techniques and gives experienced cooks new ideas and methods to improve their skills.</p>
+                            <p>The tips cover a wide range of topics including ingredient preparation, cooking techniques, baking fundamentals, and kitchen hacks. This feature supports the platform's goal of making cooking more accessible and building user confidence in the kitchen.</p>
+                        </div>
+                        <div>
+                            <img src="images/feature-tips.png" alt="Tips and tricks page interface" class="feature-image">
+                            <span class="image-caption">Tips & Tricks educational content</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <h3>AI Chatbot Assistance</h3>
+                            <p>BakeMatch includes an integrated AI chatbot that helps users with cooking questions, ingredient substitutions, and recipe suggestions. Users can ask for tips, clarifications about techniques, or alternatives when they're missing an ingredient.</p>
+                            <p>The chatbot is designed to be helpful without being intrusive. It appears as a floating panel that users can access from any page, providing support while cooking without disrupting their recipe browsing experience.</p>
+                        </div>
+                        <div>
+                            <img src="images/feature-analytics.png" alt="AI chatbot interface" class="feature-image">
+                            <span class="image-caption">AI assistant providing cooking help</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Flows -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">How Users Interact with BakeMatch</h2>
+                
+                <div class="card-grid">
+                    <!-- User Flow 1 -->
+                    <div class="card">
+                        <h3>Finding Recipes by Ingredients</h3>
+                        <p><strong>Step 1:</strong> User arrives on the homepage and sees the ingredient selection panel.</p>
+                        <p><strong>Step 2:</strong> They select ingredients they have at home by clicking on ingredient tags or using the search function.</p>
+                        <p><strong>Step 3:</strong> Recipes that match their selected ingredients appear instantly in the results, sorted by relevance.</p>
+                    </div>
+
+                    <!-- User Flow 2 -->
+                    <div class="card">
+                        <h3>Browsing All Recipes</h3>
+                        <p><strong>Step 1:</strong> User clicks "Recipes" in the navigation to view all available recipes.</p>
+                        <p><strong>Step 2:</strong> They browse the recipe grid and can apply filters for category, areas and the alphabet.</p>
+                        <p><strong>Step 3:</strong> User clicks on a recipe card to view full details including ingredients, instructions, and images.</p>
+                    </div>
+
+                    <!-- User Flow 3 -->
+                    <div class="card">
+                        <h3>Saving Favorite Recipes</h3>
+                        <p><strong>Step 1:</strong> User finds a recipe they like and clicks the heart icon on the recipe detail page.</p>
+                        <p><strong>Step 2:</strong> The recipe is saved to their favorites using browser LocalStorage.</p>
+                        <p><strong>Step 3:</strong> User can access all saved recipes anytime by clicking "Favorites" in the navigation.</p>
+                    </div>
+
+                    <!-- User Flow 4 -->
+                    <div class="card">
+                        <h3>Exploring Cooking Tips</h3>
+                        <p><strong>Step 1:</strong> User clicks "Tips" in the navigation to access the Tips page.</p>
+                        <p><strong>Step 2:</strong> They browse through various cooking and baking tips covering ingredient preparation, techniques, and kitchen hacks.</p>
+                        <p><strong>Step 3:</strong> User reads helpful guidance to improve their cooking skills and gain confidence in the kitchen.</p>
+                    </div>
+
+                    <!-- User Flow 5 -->
+                    <div class="card">
+                        <h3>Getting Cooking Help</h3>
+                        <p><strong>Step 1:</strong> User clicks the AI Assistant icon in the navigation to open the chatbot.</p>
+                        <p><strong>Step 2:</strong> They ask questions about ingredients, substitutions, or cooking techniques.</p>
+                        <p><strong>Step 3:</strong> The AI provides helpful answers and suggestions while the user continues browsing recipes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Benefits -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Benefits for Users</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Reduces Food Waste</h3>
+                        <p>By helping users cook with ingredients they already have, BakeMatch encourages sustainable cooking habits and helps reduce unnecessary food waste at home.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Saves Time and Money</h3>
+                        <p>Users no longer need to search endlessly for recipes or make extra shopping trips. They can quickly find suitable recipes and start cooking with what's available.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Inspires Creativity</h3>
+                        <p>The platform encourages users to try new combinations and dishes they might not have considered, making cooking more fun and less stressful for beginners.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Project Portfolio</p>
+            <p>Created as part of Minor Creative, Design and Technology</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

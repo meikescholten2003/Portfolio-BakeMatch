@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BakeMatch technology stack - Tools and technologies used">
+    <title>BakeMatch - Technology</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">BakeMatch</a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container">
+                <h1>Technology Stack</h1>
+                <p>An overview of the technologies used to build BakeMatch and the reasoning behind each choice.</p>
+            </div>
+        </section>
+
+        <!-- Core Technologies -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Core Technologies</h2>
+                <p class="section-intro">
+                    BakeMatch uses core web technologies chosen for their learning value, creative control, and project realism. The technology stack focuses on fundamental skills while creating a functional, user-friendly platform.
+                </p>
+
+                <div class="tech-grid">
+                    <!-- HTML -->
+                    <div class="tech-item">
+                        <h3>HTML5</h3>
+                        <p><strong>Purpose:</strong> Structure and semantic content organization for all pages.</p>
+                        <p><strong>Why chosen:</strong> HTML5 provides the foundation for web content. Learning to structure pages properly with semantic elements like header, nav, section, and article ensures accessibility and clear organization. This project required building multiple interconnected pages from scratch.</p>
+                        <p><strong>Key usage:</strong> Created the homepage with ingredient selection, recipe overview pages, recipe detail pages, favorites section, tips pages, and blog pages. Semantic markup ensures screen readers can navigate content effectively.</p>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="tech-item">
+                        <h3>CSS3</h3>
+                        <p><strong>Purpose:</strong> Visual design, layout, branding, and responsive behavior.</p>
+                        <p><strong>Why chosen:</strong> CSS was chosen to implement the complete design system defined in the style guide. Modern CSS features like Flexbox and Grid enable complex layouts without additional libraries. Custom properties allow consistent theming throughout the platform.</p>
+                        <p><strong>Key usage:</strong> Implements the warm beige and brown color scheme, rounded UI components, typography hierarchy, spacing system, and grid layouts. Ensures visual consistency across all pages and maintains the cozy, approachable atmosphere central to BakeMatch's identity.</p>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="tech-item">
+                        <h3>JavaScript (ES6+)</h3>
+                        <p><strong>Purpose:</strong> Interactive functionality, dynamic content updates, and data management.</p>
+                        <p><strong>Why chosen:</strong> JavaScript makes BakeMatch interactive. Core features like ingredient filtering, recipe loading, favorites management, and navigation depend on JavaScript.</p>
+                        <p><strong>Key usage:</strong> Handles ingredient selection and filtering, fetches recipe data from the external API, manages favorites using LocalStorage, enables search functionality, and controls the AI chatbot interface. Uses async/await for API calls.</p>
+                    </div>
+
+                    <!-- Figma -->
+                    <div class="tech-item">
+                        <h3>Figma</h3>
+                        <p><strong>Purpose:</strong> Design, prototyping, and style guide creation.</p>
+                        <p><strong>Why chosen:</strong> Figma was the main design tool for creating wireframes, low-fidelity and high-fidelity prototypes, and the complete style guide. Previous experience with Figma allowed focus on UX/UI principles rather than learning a new tool.</p>
+                        <p><strong>Key usage:</strong> Created all visual designs, tested interaction flows, defined typography and color systems, and produced prototypes for user testing. Figma's component system helped maintain design consistency.</p>
+                    </div>
+
+                    <!-- VS Code -->
+                    <div class="tech-item">
+                        <h3>Visual Studio Code</h3>
+                        <p><strong>Purpose:</strong> Code editor and development environment.</p>
+                        <p><strong>Why chosen:</strong> VS Code was the main code editor for writing and organizing HTML, CSS, and JavaScript files. Features like syntax highlighting, file management, and live preview workflow improved efficiency and code readability.</p>
+                        <p><strong>Key usage:</strong> Organized project file structure, wrote and edited all code files, debugged JavaScript, and tested the website during development. Extensions helped with code formatting and error detection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APIs and Services -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">APIs and External Services</h2>
+                
+                <div class="tech-grid">
+                    <!-- TheMealDB API -->
+                    <div class="tech-item">
+                        <h3>TheMealDB API</h3>
+                        <p><strong>Purpose:</strong> External recipe database providing real recipe data.</p>
+                        <p><strong>Why chosen:</strong> Instead of creating a custom database or using static JSON files, TheMealDB provides professional recipe data including categories, ingredients, instructions, and images. This makes the project more realistic and scalable while teaching API integration.</p>
+                        <p><strong>Implementation:</strong> Fetch requests retrieve recipe data dynamically. The API provides endpoints for searching by ingredient, browsing categories, and getting detailed recipe information. This reflects how real recipe platforms work in practice.</p>
+                    </div>
+
+                    <!-- Local Storage API -->
+                    <div class="tech-item">
+                        <h3>Local Storage API</h3>
+                        <p><strong>Purpose:</strong> Client-side data persistence for favorite recipes.</p>
+                        <p><strong>Why chosen:</strong> LocalStorage allows users to save favorite recipes directly in the browser without creating accounts or backend infrastructure. This fits the project scope while still providing a useful, practical feature.</p>
+                        <p><strong>Implementation:</strong> Stores and retrieves favorite recipe IDs as JSON data. Users can add or remove favorites at any time, and the data persists across browser sessions. This demonstrates understanding of browser storage capabilities.</p>
+                    </div>
+
+                    <!-- Fetch API -->
+                    <div class="tech-item">
+                        <h3>Fetch API</h3>
+                        <p><strong>Purpose:</strong> HTTP requests for retrieving recipe data from TheMealDB.</p>
+                        <p><strong>Why chosen:</strong> The Fetch API is the modern standard for making HTTP requests in JavaScript. It returns promises that work naturally with async/await syntax, making asynchronous code more readable.</p>
+                        <p><strong>Implementation:</strong> All communication with TheMealDB uses fetch requests. Error handling catches failed requests and provides feedback when recipes cannot be loaded. This ensures the interface remains responsive even when network issues occur.</p>
+                    </div>
+
+                    <!-- AI Chatbot API -->
+                    <div class="tech-item">
+                        <h3>AI Chatbot Integration</h3>
+                        <p><strong>Purpose:</strong> Conversational assistance for cooking questions and ingredient tips.</p>
+                        <p><strong>Why chosen:</strong> An AI chatbot adds practical value by helping users with ingredient substitutions, cooking techniques, and recipe questions. The focus was on UI integration and user experience rather than building the AI model.</p>
+                        <p><strong>Implementation:</strong> JavaScript-based chat interface connects to an external AI API. The chatbot appears as a floating panel accessible from any page, providing help without interrupting the recipe browsing experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Tools -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Development and Design Tools</h2>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Figma</h3>
+                        <p><strong>Purpose:</strong> UI/UX design and prototyping.</p>
+                        <p>Used for creating wireframes, low-fidelity and high-fidelity prototypes, moodboards, and the complete style guide. Figma's collaborative features and component system helped maintain design consistency throughout the project.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>VS Code</h3>
+                        <p><strong>Purpose:</strong> Code editor and development environment.</p>
+                        <p>Primary tool for writing HTML, CSS, and JavaScript. Offered excellent support for web development with syntax highlighting, integrated debugging, file management, and extensions for code formatting.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Browser DevTools</h3>
+                        <p><strong>Purpose:</strong> Debugging and testing.</p>
+                        <p>Essential for inspecting DOM elements, debugging JavaScript, testing responsive design, analyzing network requests, and monitoring console errors. Used extensively during development and testing phases.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Trello</h3>
+                        <p><strong>Purpose:</strong> Project planning and task management.</p>
+                        <p>Organized the development process into clear steps and tracked progress throughout the project. Helped maintain focus and ensure all planned features were completed systematically.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Pinterest</h3>
+                        <p><strong>Purpose:</strong> Visual inspiration and research.</p>
+                        <p>Used for gathering design inspiration, exploring UI patterns, and collecting references for the moodboard. Helped define the visual direction and discover effective design patterns for recipe platforms.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Google Gemini</h3>
+                        <p><strong>Purpose:</strong> Persona image generation.</p>
+                        <p>Generated realistic profile photos for user personas using text prompts describing age, lifestyle, and mood. This added visual realism to the personas without using stock photos of real people.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Project Portfolio</p>
+            <p>Created as part of Minor Creative, Design and Technology</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

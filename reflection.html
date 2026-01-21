@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BakeMatch project reflection - Learnings and future improvements">
+    <title>BakeMatch - Reflection</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">BakeMatch</a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container">
+                <h1>Project Reflection</h1>
+                <p>Looking back at the BakeMatch development process: what worked well, what was learned, and how the project could be improved further.</p>
+            </div>
+        </section>
+
+        <!-- What Went Well -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">What Went Well</h2>
+                <p class="section-intro">
+                    Several aspects of the BakeMatch project exceeded expectations and contributed to creating a cohesive, user-friendly platform.
+                </p>
+
+                <div class="reflection-grid">
+                    <div class="reflection-section">
+                        <h3>Structured Design Process</h3>
+                        <p>Following a systematic UX/UI design workflow from concept to final product kept the project organized and purposeful.</p>
+                        <ul>
+                            <li>Starting with wireframes before visual design prevented getting distracted by aesthetics too early</li>
+                            <li>Creating a complete style guide ensured visual consistency across all pages</li>
+                            <li>User testing at both low and high fidelity stages validated design decisions</li>
+                            <li>Each step built logically on the previous one, creating a clear development path</li>
+                        </ul>
+                    </div>
+
+                    <div class="reflection-section">
+                        <h3>Clear Visual Identity</h3>
+                        <p>The warm, cozy design successfully communicates BakeMatch's goal of making cooking accessible and approachable.</p>
+                        <ul>
+                            <li>Beige and brown tones create the intended food-related, homey feeling</li>
+                            <li>Rounded shapes and friendly typography reduce intimidation for beginner cooks</li>
+                            <li>User feedback confirmed the design feels welcoming rather than technical</li>
+                            <li>The visual style differentiates BakeMatch from clinical recipe databases</li>
+                        </ul>
+                    </div>
+
+                    <div class="reflection-section">
+                        <h3>Successful API Integration</h3>
+                        <p>Learning to work with TheMealDB API provided valuable technical skills while making the platform immediately useful.</p>
+                        <ul>
+                            <li>Successfully fetched and displayed dynamic recipe data</li>
+                            <li>Understood how to work with asynchronous JavaScript and promises</li>
+                            <li>Implemented error handling for failed API requests</li>
+                            <li>The project feels realistic with professional recipe content and images</li>
+                        </ul>
+                    </div>
+
+                    <div class="reflection-section">
+                        <h3>User-Centered Feature Decisions</h3>
+                        <p>Basing feature choices on user needs and testing rather than assumptions created a more focused platform.</p>
+                        <ul>
+                            <li>Personas guided design decisions throughout the project</li>
+                            <li>Benchmark analysis prevented reinventing solutions to solved problems</li>
+                            <li>User testing revealed which features worked intuitively</li>
+                            <li>The ingredient filter successfully addresses the core user need</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Learnings -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">What I Learned</h2>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Clear Concept Definition Is Essential</h3>
+                        <p>Defining the problem, target audience, and core value proposition before any design work creates a strong foundation. BakeMatch's success stems from clearly understanding that users need to cook with what they have, not search for ideal recipes.</p>
+                        <p>Without this clarity, features could easily become unfocused. The concept guides every decision from visual design to technical implementation.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>User Testing Reveals Blind Spots</h3>
+                        <p>Observing real users interact with prototypes consistently revealed assumptions and design flaws. What feels obvious to the designer often isn't clear to users experiencing the interface for the first time.</p>
+                        <p>Testing at multiple stages—low-fidelity wireframes, high-fidelity prototypes, and working website—caught different types of issues and improved usability significantly.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Visual Design Communicates Purpose</h3>
+                        <p>The warm, cozy visual style actively supports BakeMatch's goal of accessibility. Color choices, typography, and UI shapes aren't just aesthetic—they communicate how approachable and friendly the platform is.</p>
+                        <p>A more technical or clinical design would work against the user experience goals, even with identical features. Design and purpose must align.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>APIs Expand Project Possibilities</h3>
+                        <p>Learning what an API (Application Programming Interface) is and how it works was an important discovery. An API acts as a bridge that allows different software systems to communicate and share data with each other.</p>
+                        <p>TheMealDB API provides access to a large collection of professional recipe data—images, ingredients, and instructions—that would take years to create manually. Understanding how APIs enable websites to access external data sources opened up new possibilities for what web projects can achieve.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Style Guides Ensure Consistency</h3>
+                        <p>Creating a complete style guide before building the high-fidelity prototype saved enormous time and prevented visual inconsistencies. Having defined typography, colors, spacing, and components meant every design decision was already made.</p>
+                        <p>This approach works much better than designing each screen from scratch and trying to maintain consistency retroactively.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Documentation Supports Learning</h3>
+                        <p>Writing detailed explanations of design decisions, challenges, and solutions throughout the project helped solidify learning. The showcase report became both a record of progress and a reflection tool.</p>
+                        <p>Explaining why choices were made forces deeper thinking than simply completing tasks. Documentation transforms work into understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Improvements -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Future Improvements</h2>
+                <p class="section-intro">
+                    If BakeMatch continued development, several enhancements could provide even more value to users.
+                </p>
+
+                <div class="reflection-grid">
+                    <div class="reflection-section">
+                        <h3>Mobile Responsiveness</h3>
+                        <p>While optimized for desktop, making BakeMatch fully responsive would allow users to access recipes on their phones and tablets.</p>
+                        <ul>
+                            <li>Mobile-optimized ingredient selection interface</li>
+                            <li>Responsive recipe cards that adapt to small screens</li>
+                            <li>Touch-friendly navigation and interactions</li>
+                            <li>Ability to view recipes while cooking with a phone or tablet</li>
+                        </ul>
+                    </div>
+
+                    <div class="reflection-section">
+                        <h3>Enhanced Filtering Options</h3>
+                        <p>Additional filtering capabilities could help users find exactly what they want to cook.</p>
+                        <ul>
+                            <li>Dietary restriction filters (vegetarian, vegan, gluten-free)</li>
+                            <li>Cuisine type categories (Italian, Asian, Mexican, etc.)</li>
+                            <li>Meal type filters (breakfast, lunch, dinner, snacks, desserts)</li>
+                            <li>Advanced ingredient matching with substitution suggestions</li>
+                        </ul>
+                    </div>
+
+                    <div class="reflection-section">
+                        <h3>User Accounts and Personalization</h3>
+                        <p>Optional user accounts could enable features that enhance the personal cooking experience.</p>
+                        <ul>
+                            <li>Synced favorites across devices</li>
+                            <li>Personal recipe collections and notes</li>
+                            <li>Cooking history and frequently made dishes</li>
+                            <li>Customized ingredient preferences and pantry lists</li>
+                        </ul>
+                    </div>
+
+                    <div class="reflection-section">
+                        <h3>Shopping List Integration</h3>
+                        <p>Helping users track missing ingredients would complete the cooking workflow.</p>
+                        <ul>
+                            <li>Automatic shopping list generation for missing ingredients</li>
+                            <li>Ability to check off items while shopping</li>
+                            <li>Integration with grocery delivery services</li>
+                            <li>Price estimates for missing ingredients</li>
+                        </ul>
+                    </div>
+
+                    <div class="reflection-section">
+                        <h3>Expanded Recipe Database</h3>
+                        <p>Integrating additional recipe sources could provide more variety and options.</p>
+                        <ul>
+                            <li>Multiple API integrations for broader recipe coverage</li>
+                            <li>Custom recipe upload functionality</li>
+                            <li>Recipe scaling for different serving sizes</li>
+                            <li>Nutritional information display</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Thoughts -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Conclusion</h2>
+                <div class="card">
+                    <p>BakeMatch demonstrates that combining thoughtful UX/UI design with focused technical implementation can create valuable, user-centered platforms. The project shows that clear concept definition, systematic design processes, and user validation lead to better outcomes than assuming what users need.</p>
+                    <p>The biggest lessons learned were the importance of clarity over complexity, the value of user testing at every stage, and how visual design actively supports user experience goals. Starting with a clear problem—helping people cook with available ingredients—kept every decision focused on real user needs.</p>
+                    <p>This project combined creative design skills (branding, visual identity, prototyping) with technical development (HTML, CSS, JavaScript, API integration) while maintaining a user-centered approach throughout. The warm, approachable design successfully makes cooking feel accessible, while the functional ingredient-matching system addresses a practical everyday problem.</p>
+                    <p>Moving forward, the principles learned from BakeMatch will guide future work: understand users deeply, design with purpose, test assumptions early, maintain consistency through systems, and remember that technology should solve real problems in ways that feel natural and welcoming to the people using it.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Project Portfolio</p>
+            <p>Created as part of Minor Creative, Design and Technology</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

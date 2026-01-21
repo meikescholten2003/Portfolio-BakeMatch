@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BakeMatch development process - How the project was created">
+    <title>BakeMatch - Process</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">BakeMatch</a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="reflection.html">Reflection</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="hero">
+            <div class="container">
+                <h1>Development Process</h1>
+                <p>A look at how BakeMatch came to life, from initial concept and branding to final implementation and user testing.</p>
+            </div>
+        </section>
+
+        <!-- Process Timeline -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Project Journey</h2>
+                <p class="section-intro">
+                    The BakeMatch development process followed a structured UX/UI design approach combined with front-end development. Each phase built on insights from the previous one, ensuring the final product addressed real user needs while maintaining a clear, accessible design.
+                </p>
+
+                <div class="timeline">
+                    <!-- Phase 1: Concept and Branding -->
+                    <div class="timeline-item">
+                        <h3>Concept and Branding (Step 1-2)</h3>
+                        <p>The project started by clearly defining the problem: many people have ingredients at home but don't know what to make with them. Traditional recipe platforms focus on ideal recipes instead of real kitchens, creating frustration.</p>
+                        <p>Key insight: Users wanted to start with what they have rather than shopping for new ingredients. The focus became reversing the traditional recipe search process.</p>
+                        <p>During this phase, the brand name "BakeMatch" was chosen through a systematic naming exploration. Multiple options were compared based on clarity, friendliness, and relevance to the concept. A logo was developed using AI generation guided by specific prompts describing the desired style and mood.</p>
+                        <p>User personas were created representing students and young professionals with limited budgets and time. A moodboard defined the visual direction using warm beige and brown tones to create a cozy, food-related feeling.</p>
+                    </div>
+
+                    <!-- Phase 2: Research and Feature Planning -->
+                    <div class="timeline-item">
+                        <h3>Research and Feature Planning (Step 3-4)</h3>
+                        <p>A benchmark analysis was conducted on four existing platforms: SuperCook, Tasty, Lekker & Simpel, and Boodschappen.nl. Each platform was tested to identify strengths, weaknesses, and patterns in how they solve similar problems.</p>
+                        <p>SuperCook confirmed that ingredient matching is a strong foundation but showed where usability could be improved. Tasty provided design inspiration for recipe presentation. Lekker & Simpel demonstrated the value of simplicity for beginner cooks. Boodschappen.nl showed how filtering can improve usability.</p>
+                        <p>Based on these insights, a core feature list was defined: ingredient filter, one-missing-ingredient filter, favorites functionality, recipe database integration, AI chatbot assistance, and responsive desktop UI.</p>
+                        <p>User flows were mapped out in detail, showing how users would navigate through the platform from entry point to action. This included ingredient selection, recipe browsing, favorites management, and AI assistant access.</p>
+                    </div>
+
+                    <!-- Phase 3: Design and Prototyping -->
+                    <div class="timeline-item">
+                        <h3>Design and Prototyping (Step 5-10)</h3>
+                        <p>The design phase began with hand-drawn wireframes exploring different homepage layouts. Multiple structural variations were sketched to test navigation placement, ingredient selection positioning, and content hierarchy.</p>
+                        <p>The strongest wireframe structure was then translated into a low-fidelity prototype in Figma. This black-and-white prototype focused purely on layout and user flow without visual styling. User testing at this stage revealed that the structure was clear and navigation felt intuitive.</p>
+                        <p>A comprehensive style guide was created defining typography, color palette, spacing rules, icons, and UI components. The warm beige and brown color scheme supports the cozy, food-related atmosphere. Rounded shapes and friendly typography create an approachable feel.</p>
+                        <p>The high-fidelity prototype brought the design to life with full colors, imagery, and branding. User testing with four participants validated that the ingredient filter was easy to understand, navigation was clear, and recipe browsing felt natural.</p>
+                    </div>
+
+                    <!-- Phase 4: Development -->
+                    <div class="timeline-item">
+                        <h3>Development and Implementation (Step 11-19)</h3>
+                        <p>Development started with learning HTML and CSS fundamentals through tutorials. The core HTML structure was built first, establishing the homepage, recipe pages, and navigation system.</p>
+                        <p>Instead of creating a custom database, the decision was made to use TheMealDB API, a real online recipe database. This external API provides recipe data including categories, ingredients, instructions, and images. Working with a real database made the project more realistic and helped develop skills in API integration using fetch requests.</p>
+                        <p>JavaScript was used to add interactivity. The ingredient filter was implemented to dynamically show and hide recipes based on selected ingredients. The favorites functionality uses LocalStorage to save recipes directly in the browser without requiring user accounts.</p>
+                        <p>An AI chatbot was integrated to help users with cooking questions and ingredient substitutions. The chatbot appears as a floating panel accessible from any page, providing support without disrupting the browsing experience.</p>
+                    </div>
+
+                    <!-- Phase 5: Testing and Refinement -->
+                    <div class="timeline-item">
+                        <h3>Testing and Final Polish (Step 20)</h3>
+                        <p>Final user testing focused on the complete working prototype. Feedback confirmed that core features worked as expected and the visual design created the intended warm, approachable atmosphere.</p>
+                        <p>UI polish included refining spacing, improving visual hierarchy, and ensuring consistency across all pages. The interface was optimized for desktop viewing while maintaining clear, accessible design patterns.</p>
+                        <p>Documentation was completed, including a detailed showcase report covering every step of the process, design decisions, challenges faced, and lessons learned. An online portfolio was created to present the project professionally.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Decisions -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Important Decisions</h2>
+                <p class="section-intro">
+                    Several key decisions shaped BakeMatch's direction and determined its success.
+                </p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Using an External Recipe Database</h3>
+                        <p><strong>Decision:</strong> Integrate with TheMealDB API instead of creating a custom database.</p>
+                        <p><strong>Reasoning:</strong> Using a real online database provides reliable, diverse recipe data without manual maintenance. It also reflects how real recipe platforms work in practice and develops valuable API integration skills.</p>
+                        <p><strong>Outcome:</strong> The platform has access to a large, professional recipe database with high-quality images and detailed instructions, making it immediately useful and realistic.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Warm, Cozy Visual Design</h3>
+                        <p><strong>Decision:</strong> Use beige and brown tones with rounded shapes instead of bright, energetic colors.</p>
+                        <p><strong>Reasoning:</strong> The warm color palette creates a cozy, food-related feeling that makes cooking feel approachable and non-intimidating for beginners. This supports the platform's goal of accessibility.</p>
+                        <p><strong>Outcome:</strong> Users respond positively to the friendly atmosphere. The design feels like a helpful companion in the kitchen rather than an intimidating technical tool.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>No User Accounts Required</h3>
+                        <p><strong>Decision:</strong> Use LocalStorage for favorites instead of requiring user registration.</p>
+                        <p><strong>Reasoning:</strong> Creating accounts creates friction for new users. LocalStorage allows the favorites feature to work immediately without barriers, fitting the project scope while still providing value.</p>
+                        <p><strong>Outcome:</strong> Users can start using BakeMatch immediately and save recipes without any setup process. This reduces the barrier to entry significantly.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Desktop-First Approach</h3>
+                        <p><strong>Decision:</strong> Design and optimize primarily for desktop viewing.</p>
+                        <p><strong>Reasoning:</strong> The project scope focused on desktop implementation. Users often cook with a laptop or tablet on the counter, making desktop optimization appropriate for the use case.</p>
+                        <p><strong>Outcome:</strong> The interface has enough space to show the ingredient filter, recipe grid, and navigation clearly without feeling cramped or requiring excessive scrolling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Solving -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Challenges and Solutions</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Challenge: Choosing the Right Visual Direction</h3>
+                        <p><strong>Problem:</strong> Multiple UI styles could work for a recipe platform. Finding one that truly fits BakeMatch's goal of accessibility was challenging.</p>
+                        <p><strong>Solution:</strong> Compared different styles by asking which feels less intimidating and better supports beginner cooks. A warm, cozy style was chosen over clean minimal or playful illustrated designs because it creates the right emotional tone.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Challenge: Creating Realistic Personas</h3>
+                        <p><strong>Problem:</strong> Early personas felt too generic and didn't provide enough specific guidance for design decisions.</p>
+                        <p><strong>Solution:</strong> Researched well-built persona examples to understand what information is essential. Focused on motivations, frustrations, and real-life situations instead of just demographics. This made personas more useful for validating feature choices.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Challenge: Balancing Visual Detail in Wireframes</h3>
+                        <p><strong>Problem:</strong> Deciding how detailed wireframes should be without becoming visual design.</p>
+                        <p><strong>Solution:</strong> Kept wireframes strictly black and white with no imagery. This forced focus on structure, hierarchy, and usability. Visual styling was saved for the high-fidelity prototype phase, creating a clear separation of concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Project Portfolio</p>
+            <p>Created as part of Minor Creative, Design and Technology</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
